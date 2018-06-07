@@ -1,0 +1,5 @@
+min_value=$2
+input_file=$1
+tee1_out=$3
+awk ' { for ( i = 1 ; i <= NF ; i++ ) print $i } ' $input_file |sort|uniq --count|sort -n  |
+tee $tee1_out | awk -v min=$min_value '{if($1>min) print $2}' | sort -n | xargs

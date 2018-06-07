@@ -1,0 +1,360 @@
+system: 8f2eo-pfos-11
+
+rdf-8f2eo-pfos-11-S-Na.dat
+start:   1500
+end:     2000
+skip:    1
+
+segname: O1
+resname: FOA
+name:    SAI
+
+segname: ION
+resname: SOD
+name:    SOD
+
+cutoff:  30
+mbin:    600
+box:     60 60 400
+
+
+rdf-8f2eo-pfos-11-O-Na.dat
+start:   1500
+end:     2000
+skip:    1
+
+segname: O1
+resname: FOA
+name:    OBA OBB OCC 
+
+segname: ION
+resname: SOD
+name:    SOD
+
+cutoff:  30
+mbin:    600
+box:     60 60 400
+
+#参数设置 skip10 区间 100 cut off 30 mbin 60 曲线较美观
+#本条数据线可以用来origin做图
+#PFOS 中硫原子-水氧原子的RDF
+programe:VMD
+psf: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/input/run/structure.psf
+dcd: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/output/dcd/output.dcd
+tcl: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/analysis/rdf/RDF.tcl
+
+system: 8f2eo-pfos-11
+conf:
+
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: FOA
+name:    SAI
+
+segname: O155
+resname: SOL
+name:    OW
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-S-OW-2.dat
+
+programe:VMD
+psf: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/input/run/structure.psf
+dcd: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/output/dcd/output.dcd
+tcl: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/analysis/rdf/RDF.tcl
+system: 8f2eo-pfos-11
+conf:
+
+#PFOS 中O原子-水氧原子的RDF
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: FOA
+name:    OBA OBB OBC
+
+segname: O155
+resname: SOL
+name:    OW
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-O-OW.dat
+
+#surfactants of CF3 CAA CAA
+programe:VMD
+psf: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/input/run/structure.psf
+dcd: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/output/dcd/output.dcd
+tcl: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/analysis/rdf/RDF.tcl
+system: 8f2eo-pfos-11
+conf:
+
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: FOA DRG
+name:    CAA
+
+segname: O1
+resname: FOA DRG
+name:    CAA
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-CAA-CAA.dat
+
+#surfactants of CF3 FOA-CAA FOA-CAA
+programe:VMD
+psf: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/input/run/structure.psf
+dcd: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/output/dcd/output.dcd
+tcl: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/analysis/rdf/RDF.tcl
+system: 8f2eo-pfos-11
+conf:
+
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: FOA 
+name:    CAA
+
+segname: O1
+resname: FOA
+name:    CAA
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-FOA-CAA-FOA-CAA.dat
+
+#surfactants of CF3 FOA-CAA DRG-CAA
+programe:VMD
+psf: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/input/run/structure.psf
+dcd: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/output/dcd/output.dcd
+tcl: /home/ryan/cpcopy/8f2eo-pfos-11-water/moni/analysis/rdf/RDF.tcl
+system: 8f2eo-pfos-11
+conf:
+
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: FOA 
+name:    CAA
+
+segname: O1
+resname: DRG 
+name:    CAA
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-FOA-CAA-DRG-CAA.dat
+
+#8F2EO 中O原子OAI(OAI OAL OAO)-水氧原子的RDF
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: DRG
+name:    OAI
+
+segname: O155
+resname: SOL
+name:    OW
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-DRG-OAI-OW.dat
+
+#8F2EO 中O原子OAI(OAI OAL OAO)-水氧原子的RDF
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: DRG
+name:    OAL
+
+segname: O155
+resname: SOL
+name:    OW
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-DRG-OAL-OW.dat
+#8F2EO 中O原子OAI(OAI OAL OAO)-水氧原子的RDF
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: DRG
+name:    OAO
+
+segname: O155
+resname: SOL
+name:    OW
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-DRG-OAO-OW.dat
+
+#8F2EO 中O原子OAI OAL(OAI OAL OAO)-水氧原子的RDF
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: DRG
+name:    OAI OAL
+
+segname: O155
+resname: SOL
+name:    OW
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-DRG-OAIL-OW.dat
+
+
+#8F2EO 中O原子OAI OAL(OAI OAL OAO)-水氧原子的RDF
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: DRG
+name:    OAI OAL OAO
+
+segname: O155
+resname: SOL
+name:    OW
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-DRG-OAILO-OW.dat
+
+#8F2EO 中O原子OAI OAL OAO(OAI OAL OAO)-Na
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: DRG
+name:    OAI OAL OAO
+
+segname: ION
+resname: SOD
+name:    SOD
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-DRG-OAILO-NA.dat
+
+#8F2EO 中O原子OAI OAL (OAI OAL OAO)-Na
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: DRG
+name:    OAI OAL 
+
+segname: ION
+resname: SOD
+name:    SOD
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-DRG-OAIL-NA.dat
+
+#8F2EO 中O原子OAI(OAI OAL OAO)-Na
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: DRG
+name:    OAI
+
+segname: ION
+resname: SOD
+name:    SOD
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-DRG-OAI-NA.dat
+
+#8F2EO 中O原子OAL (OAI OAL OAO)-Na
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: DRG
+name:    OAL 
+
+segname: ION
+resname: SOD
+name:    SOD
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-DRG-OAL-NA.dat
+
+
+#8F2EO 中O原子OAO (OAI OAL OAO)-Na
+start:   1500
+end:     1600
+skip:    10
+
+segname: O1
+resname: DRG
+name:    OAO 
+
+segname: ION
+resname: SOD
+name:    SOD
+
+cutoff:  30
+mbin:    60
+box:     60 60 400
+
+outputname:rdf-8f2eo-pfos-11-DRG-OAO-NA.dat

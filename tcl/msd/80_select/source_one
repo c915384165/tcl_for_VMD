@@ -1,0 +1,2 @@
+./one PFOS-12-water-msd.dat    160 check1.dat > 80-out1.dat 
+./one PFOA-12-water-msd.dat    160 check2.dat > 80-out2.dat 
